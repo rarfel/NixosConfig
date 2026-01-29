@@ -84,7 +84,7 @@
 		};
 
 		# Scripts to run in init
-		interactiveShellInit = "fastfetch";
+		interactiveShellInit = "eval \"$(fzf --bash)\";fastfetch";
 	};
 
 	# Enable CUPS to print documents. I dont have a printer
