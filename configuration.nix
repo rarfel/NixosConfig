@@ -56,6 +56,14 @@
 	# Enable bluetooth
 	hardware.bluetooth.enable = true;
 
+	# Auto clean up
+	nix.gc = {
+		automatic = true;
+		dates = "daily";
+		options = "--delete-older-than 15d";
+	};
+	nix.settings.auto-optimise-store = true;
+
 	# Allow unfree packages
 	nixpkgs.config.allowUnfree = true;
 	
