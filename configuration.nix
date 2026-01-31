@@ -159,15 +159,15 @@
 	};
 
 	# Enable git
-	programs.git = {
-		enable = true;
-		config = {
-			user.name = "rarfel";
-			user.email = "faelmvitor@gmail.com";
-			init.defaultBranch = "main";
-			pull.rebase = true;
-		};
-	};
+	# programs.git = {
+		# enable = true;
+		# config = {
+			# user.name = "rarfel";
+			# user.email = "faelmvitor@gmail.com";
+			# init.defaultBranch = "main";
+			# pull.rebase = true;
+		# };
+	# };
 
 	# Changing defaults
 	environment.variables = {
