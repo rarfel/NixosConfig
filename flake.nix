@@ -1,18 +1,16 @@
 {
+  description = "A simple NixOS flake";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
+    # NixOS official package source, using the nixos-25.11 branch here
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.11";
   };
 
-  outputs = inputs: {
-
-    nixosConfigurations.nixos = inputs.nixpkgs.lib.nixosSystem {
+  outputs = { self, nixpkgs, ... }@inputs: {
+    nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       modules = [
-        { nix.settings.experimental-features = ["nix-command" "flakes"]; }
         ./configuration.nix
       ];
     };
-
   };
-  
 }
