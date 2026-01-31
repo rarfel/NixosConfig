@@ -136,8 +136,8 @@
 
       # window
       remember_window_size no
-      intial_window_width 1150
-      initial_window_heigth 600
+      initial_window_width 1150
+      initial_window_height 600
       hide_window_decorations yes
 
       # cursor
