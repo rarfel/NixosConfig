@@ -31,7 +31,6 @@
   # Packages that should be installed to the user profile.
   home.packages = with pkgs; [
 
-    fastfetch
     nnn # terminal file manager
 
     # archives
@@ -45,7 +44,6 @@
     # jq # A lightweight and flexible command-line JSON processor
     # yq-go # yaml processor https://github.com/mikefarah/yq
     # eza # A modern replacement for ‘ls’
-    fzf # A command-line fuzzy finder
 
     # networking tools
     # mtr # A network diagnostic tool
@@ -67,11 +65,9 @@
     # gawk
     # zstd
     # gnupg
-    cbonsai
-    cmatrix
-    starship
     sl
     heroic
+    obsidian
 
     # nix related
     #
@@ -99,25 +95,22 @@
     # pciutils # lspci
     # usbutils # lsusb
 
-    # Text
-    neovim
-    obsidian
-    bat
-
     # Code
     cmake
     gcc_multi
     gdb
-    git
   ];
 
-  # basic configuration of git, please change to your own
   programs.git = {
     enable = true;
     settings.user = {
       name = "rarfel";
       email = "faelmvitor@gmail.com";
     };
+  };
+
+  programs.obsidian = {
+    enable = true;
   };
 
   programs.starship = {

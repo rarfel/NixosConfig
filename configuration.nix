@@ -131,20 +131,13 @@
 		neovim
 		git
 		wget
-		sl
 		cbonsai
 		cmatrix
 		kitty
 		fzf
 		starship
-		btop
 		bat
-		cmake
-		gcc_multi
-		gdb
 		fastfetch
-		heroic
-		obsidian
 	];
 
 	# Enable starship to do whatever it needs to do
@@ -157,17 +150,6 @@
 		enable = true;
 		defaultEditor = true;
 	};
-
-	# Enable git
-	# programs.git = {
-		# enable = true;
-		# config = {
-			# user.name = "rarfel";
-			# user.email = "faelmvitor@gmail.com";
-			# init.defaultBranch = "main";
-			# pull.rebase = true;
-		# };
-	# };
 
 	# Changing defaults
 	environment.variables = {
