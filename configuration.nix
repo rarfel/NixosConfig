@@ -170,8 +170,8 @@
 	};
 
 	# Changing defaults
-	environment.sessionVariables = {
-		EDITOR = "nvim";
+	environment.variables = {
+		EDITOR = "neovim";
 		BROWSER = "firefox";
 		TERMINAL = "kitty";
 	};
