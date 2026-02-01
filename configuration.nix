@@ -73,12 +73,6 @@
 	# Allow unfree packages
 	nixpkgs.config.allowUnfree = true;
 	
-	# Enables the bash to do his thing
-	programs.bash = {
-		# Scripts to run in init
-		interactiveShellInit = "eval \"$(fzf --bash)\";fastfetch";
-	};
-
 	# Enable CUPS to print documents. I dont have a printer
 	services.printing.enable = false;
 
@@ -120,43 +114,6 @@
 		bat
 		fastfetch
 	];
-
-	# Enable starship to do whatever it needs to do
-	programs.starship = {
-		enable = true;
-	};
-
-	# Enable neovim
-	programs.neovim = {
-		enable = true;
-		defaultEditor = true;
-	};
-
-	# Changing defaults
-	environment.variables = {
-		EDITOR = "neovim";
-		BROWSER = "firefox";
-		TERMINAL = "kitty";
-	};
-
-	# Some programs need SUID wrappers, can be configured further or are
-	# started in user sessions.
-	# programs.mtr.enable = true;
-	# programs.gnupg.agent = {
-	#   enable = true;
-	#   enableSSHSupport = true;
-	# };
-
-	# List services that you want to enable:
-
-	# Enable the OpenSSH daemon.
-	# services.openssh.enable = true;
-
-	# Open ports in the firewall.
-	# networking.firewall.allowedTCPPorts = [ ... ];
-	# networking.firewall.allowedUDPPorts = [ ... ];
-	# Or disable the firewall altogether.
-	# networking.firewall.enable = false;
 
 	system.stateVersion = "25.11"; # Did you read the comment?
 }

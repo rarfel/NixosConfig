@@ -1,4 +1,4 @@
-{pkgs, ...}:
+{config, pkgs, ...}:
 
 {
 	programs.bash = {
@@ -11,8 +11,10 @@
 
 			grep = "grep --color=auto";
 
-			nixconf = "cd ~/Programacao/nixos";
+			gacp = "git add .; git commit -m \"$1\"; git push -u origin main";
+
+			nixconf = "cd /etc/nixos/ ;sudo nvim .";
 		};
-		initExtra = "eval \"(fzf --bash)\"; fastfetch";
+		initExtra = "fastfetch";
 	};
 }

@@ -5,8 +5,7 @@
   home.homeDirectory = "/home/rarfel";
 
   imports = [
-    ./programs/kitty.nix
-    ./programs/bash.nix
+    ./programs
   ];
 
   home.packages = with pkgs; [
@@ -39,7 +38,7 @@
     cowsay
     # file
     # which
-    # tree
+    tree
     # gnused
     # gnutar
     # gawk
@@ -80,22 +79,6 @@
     gcc_multi
     gdb
   ];
-
-  programs.git = {
-    enable = true;
-    settings.user = {
-      name = "rarfel";
-      email = "faelmvitor@gmail.com";
-    };
-  };
-
-  programs.obsidian = {
-    enable = true;
-  };
-
-  programs.starship = {
-    enable = true;
-  };
 
   home.stateVersion = "25.11";
 }
