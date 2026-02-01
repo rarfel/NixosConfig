@@ -3,14 +3,14 @@
 {
 	imports =
 	[ # Include the results of the hardware scan.
-		./hardware-configuration.nix
+		etc/nixos/hardware-configuration.nix
 	];
 
 	# Bootloader.
 	boot.loader.systemd-boot.enable = true;
 	boot.loader.efi.canTouchEfiVariables = true;
 
-	networking.hostName = "nixos"; # Define your hostname.
+	networking.hostName = "nixos";
 	# networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
 	# Enable networking
@@ -55,6 +55,12 @@
 
 	# Enable bluetooth
 	hardware.bluetooth.enable = true;
+
+	# Automatic updating
+	system.autoUpgrade = {
+		enable = true;
+		dates = "weekly";
+	};
 
 	# Auto clean up
 	nix.gc = {
