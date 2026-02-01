@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 
 {
 	imports =
@@ -113,6 +113,7 @@
 		starship
 		bat
 		fastfetch
+		inputs.noctalia.packages.${system}.default
 	];
 
 	system.stateVersion = "25.11"; # Did you read the comment?

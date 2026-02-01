@@ -5,7 +5,7 @@
   home.homeDirectory = "/home/rarfel";
 
   imports = [
-    ./programs
+    ./modules/programs
   ];
 
   home.packages = with pkgs; [
