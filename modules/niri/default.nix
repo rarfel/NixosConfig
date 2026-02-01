@@ -7,4 +7,6 @@
 		fuzzel
 		swaybg
 	];
+
+	programs.niri.enable = true;
 }
