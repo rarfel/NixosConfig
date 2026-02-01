@@ -4,6 +4,10 @@
   home.username = "rarfel";
   home.homeDirectory = "/home/rarfel";
 
+  imports = [
+    ./programs/kitty.nix
+  ];
+
   # Import files from the current configuration directory into the Nix store,
   # and create symbolic links pointing to those store files in the Home directory.
 
@@ -117,65 +121,65 @@
     enable = true;
   };
 
-  programs.kitty = {
-    enable = true;
-    extraConfig = ''
-      # fonts
-      font_family      JetBrainsMonoNLNerdFont
-      bold_font        auto
-      italic_font      auto
-      bold_italic_font auto
-      font_size 11.0
+  # programs.kitty = {
+  #   enable = true;
+  #   extraConfig = ''
+  #     # fonts
+  #     font_family      JetBrainsMonoNLNerdFont
+  #     bold_font        auto
+  #     italic_font      auto
+  #     bold_italic_font auto
+  #     font_size 11.0
 
-      # window
-      remember_window_size no
-      initial_window_width 1150
-      initial_window_height 600
-      hide_window_decorations yes
+  #     # window
+  #     remember_window_size no
+  #     initial_window_width 1150
+  #     initial_window_height 600
+  #     hide_window_decorations yes
 
-      # cursor
-      cursor_trail 200
-      cursor_trail_decay 0.1 0.4
-      cursor_trail_start_treshold 2
+  #     # cursor
+  #     cursor_trail 200
+  #     cursor_trail_decay 0.1 0.4
+  #     cursor_trail_start_treshold 2
 
-      # color scheme
-      foreground #c98ec9
-      background #000000
-      background_opacity 0.8
+  #     # color scheme
+  #     foreground #c98ec9
+  #     background #000000
+  #     background_opacity 0.8
 
-      #: black
-      color0 #100010
-      color8 #500050
+  #     #: black
+  #     color0 #100010
+  #     color8 #500050
 
-      #: red
-      color1 #ee0000
-      color9 #780000 
+  #     #: red
+  #     color1 #ee0000
+  #     color9 #780000 
 
-      #: green
-      color2  #00ee00
-      color10 #007800
+  #     #: green
+  #     color2  #00ee00
+  #     color10 #007800
 
-      #: yellow
-      color3  #eeee00
-      color11 #995700
+  #     #: yellow
+  #     color3  #eeee00
+  #     color11 #995700
 
-      #: blue
-      color4  #0000ee
-      color12 #000078
+  #     #: blue
+  #     color4  #0000ee
+  #     color12 #000078
 
-      #: magenta
-      color5  #d800d8
-      color13 #780078
+  #     #: magenta
+  #     color5  #d800d8
+  #     color13 #780078
 
-      #: cyan
-      color6  #00eeee
-      color14 #00bdbd
+  #     #: cyan
+  #     color6  #00eeee
+  #     color14 #00bdbd
 
-      #: white
-      color7  #eeaeee
-      color15 #ffbfff
-      '';
-    };
+  #     #: white
+  #     color7  #eeaeee
+  #     color15 #ffbfff
+  #     '';
+  #   };
 
   programs.bash = {
     enable = true;
