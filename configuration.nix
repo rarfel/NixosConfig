@@ -75,28 +75,6 @@
 	
 	# Enables the bash to do his thing
 	programs.bash = {
-		enable = true;
-
-		enableLsColors = true;
-
-		completion.enable = true;
-
-		# Aliases
-		shellAliases = {
-			# Shortcut for ls
-			la = "ls -a";
-			ll = "ls -l";
-
-			# Color the grep
-			grep = "grep --color=auto";
-
-			# Shortcut to open kitty conf file
-			kitconf = "nvim ~/.config/kitty";
-
-			# Shortcut to open this config file
-			nixconf = "sudo nvim /etc/nixos/configuration.nix";
-		};
-
 		# Scripts to run in init
 		interactiveShellInit = "eval \"$(fzf --bash)\";fastfetch";
 	};
@@ -129,9 +107,6 @@
 
 	# Install firefox.
 	programs.firefox.enable = true;
-
-	# List packages installed in system profile. To search, run:
-	# $ nix search wget
 
 	environment.systemPackages = with pkgs; [
 		neovim
@@ -183,11 +158,5 @@
 	# Or disable the firewall altogether.
 	# networking.firewall.enable = false;
 
-	# This value determines the NixOS release from which the default
-	# settings for stateful data, like file locations and database versions
-	# on your system were taken. It‘s perfectly fine and recommended to leave
-	# this value at the release version of the first install of this system.
-	# Before changing this value read the documentation for this option
-	# (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
 	system.stateVersion = "25.11"; # Did you read the comment?
 }
