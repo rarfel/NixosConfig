@@ -9,4 +9,5 @@
 		swaylock
 	];
 
+	programs.niri.enable = true;
 }
