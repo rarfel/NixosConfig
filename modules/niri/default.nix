@@ -7,6 +7,7 @@
 		fuzzel
 		swaybg
 		swaylock
+		# swayidle
 	];
 
 	programs.niri.enable = true;
