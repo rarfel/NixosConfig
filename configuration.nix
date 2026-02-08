@@ -79,6 +79,12 @@
 
 	# Allow unfree packages
 	nixpkgs.config.allowUnfree = true;
+
+	# Enable swapfiles
+	swapDevices = [{
+		device = "/swapfile";
+		size = 16 * 1024; # 16GB
+	}];
 	
 	# Enable CUPS to print documents. I dont have a printer
 	services.printing.enable = false;
