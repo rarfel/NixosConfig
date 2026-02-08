@@ -40,7 +40,7 @@
 
       #: yellow
       color3  #eeee00
-      color11 #995700
+      color11 #ff8800
 
       #: blue
       color4  #0000ee

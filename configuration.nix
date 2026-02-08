@@ -47,11 +47,11 @@
 		'';
 	};
 
-	# Enable the GNOME Desktop Environment.
+	# Enable the GNOME Display Manager
 	# services.displayManager.gdm.enable = true;
 	# services.desktopManager.gnome.enable = true;
 
-	# Configure keymap in X11
+	# Configure keymap in X11.
 	services.xserver.xkb = {
 		layout = "br";
 		variant = "thinkpad";
@@ -120,6 +120,7 @@
 		starship
 		bat
 		fastfetch
+		inputs.quickshell.packages.${system}.default
 		inputs.noctalia.packages.${system}.default
 	];
 

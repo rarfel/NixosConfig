@@ -11,15 +11,16 @@
   home.packages = with pkgs; [
 
     nnn # terminal file manager
+    pcmanfm # gui file manager
 
     # archives
     # zip
     # xz
-    # unzip
+    unzip
     # p7zip
 
     # utils
-    # ripgrep # recursively searches directories for a regex pattern
+    ripgrep # recursively searches directories for a regex pattern
     # jq # A lightweight and flexible command-line JSON processor
     # yq-go # yaml processor https://github.com/mikefarah/yq
     # eza # A modern replacement for ‘ls’
@@ -37,7 +38,7 @@
     # misc
     cowsay
     # file
-    # which
+    which
     tree
     # gnused
     # gnutar
@@ -78,6 +79,12 @@
     cmake
     gcc_multi
     gdb
+    python315
+    javaPackages.compiler.temurin-bin.jre-25
+    lua-language-server
+    lua54Packages.luarocks
+    lua51Packages.lua
+    tree-sitter
   ];
 
   home.stateVersion = "25.11";
