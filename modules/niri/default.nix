@@ -4,10 +4,12 @@
 		niri
 		xwayland-satellite
 
-		fuzzel
+		rofi
 		swaybg
 		swaylock
 		# swayidle
 	];
-	programs.niri.enable = true;
+	programs = {
+		niri.enable = true;
+		};
 }
