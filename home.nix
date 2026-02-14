@@ -12,6 +12,8 @@
 
     nnn # terminal file manager
     pcmanfm # gui file manager
+    lxmenu-data # show installed apps
+    shared-mime-info # reconize different file types
 
     # archives
     # zip

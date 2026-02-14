@@ -40,16 +40,22 @@
 	# Enable the X11 windowing system.
 	services.xserver.enable = true;
 
-	# Enable pam security
-	security.pam.services.swaylock = {
-		text = ''
-			auth include login
-		'';
+	# Enable pam security and polkit
+	security = {
+		pam.services.swaylock = {
+			text = ''
+				auth include login
+			'';
+		};
+		polkit.enable = true;
 	};
 
-	# Enable the GNOME Display Manager
-	# services.displayManager.gdm.enable = true;
-	# services.desktopManager.gnome.enable = true;
+	# Enable automount
+	services = {
+		gvfs.enable = true;
+		udisks2.enable = true;
+		devmon.enable = true;
+	};
 
 	# Configure keymap in X11.
 	services.xserver.xkb = {
