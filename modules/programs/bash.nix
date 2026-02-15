@@ -13,6 +13,6 @@
 
 			nixconf = "cd /etc/nixos/ ;sudo nvim .";
 		};
-		initExtra = "fastfetch";
+		initExtra = "fastfetch --kitty-direct /home/rarfel/Images/valknutCheio.png --logo-width 35 --logo-height 15";
 	};
 }
