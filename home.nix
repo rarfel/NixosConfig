@@ -51,6 +51,10 @@
     heroic
     obsidian
 
+    # libreoffice
+    libreoffice-qt
+    hunspell
+
     # nix related
     #
     # it provides the command `nom` works just like `nix`
