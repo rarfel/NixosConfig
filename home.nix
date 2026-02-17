@@ -50,7 +50,7 @@
     sl
     heroic
     obsidian
-    steam
+    # steam
 
     # libreoffice
     libreoffice-qt
