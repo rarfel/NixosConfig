@@ -2,7 +2,7 @@
 {
 	programs.rofi = {
 		enable = true;
-		font = "JetBrainsMonoNLNerdFont 11";
+		font = "JetBrainsMonoNLNerdFont 12";
 		terminal = "kitty";
 		theme = "Arc-Dark";
 

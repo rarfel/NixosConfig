@@ -3,7 +3,6 @@
 	imports = [
 		./bash.nix
 		./kitty.nix
-		./swaylock.nix
 		./rofi.nix
 	];
 
