@@ -86,7 +86,7 @@
             ];
             left = [
               {
-                formatHorizontal = "dd/mm/yyyy - [HH:mm:ss]";
+                formatHorizontal = "dd/MM/yyyy - [HH:mm:ss]";
 		clockColor = "none";
                 formatVertical = "HH mm - ddd[dd], MMM";
                 id = "Clock";
