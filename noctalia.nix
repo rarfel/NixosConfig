@@ -118,7 +118,7 @@
             ];
           };
         };
-        colorSchemes.predefinedScheme = "Monochrome";
+        colorSchemes.predefinedScheme = "Tokyo Night";
         general = {
           avatarImage = "/home/rarfel/Images/funnySkeleton.png";
           radiusRatio = 0.2;
