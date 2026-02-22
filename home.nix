@@ -47,6 +47,7 @@
     # gawk
     # zstd
     # gnupg
+    cava
     sl
     heroic
     obsidian

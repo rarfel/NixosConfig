@@ -19,6 +19,7 @@
 		obsidian.enable = true;
 		starship.enable = true;
 		fzf.enable = true;
+		cava.enable = true;
 		neovim = {
 			enable = true;
 			defaultEditor = true;
