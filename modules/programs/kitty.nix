@@ -23,8 +23,8 @@
 
       # color scheme
       foreground #c98ec9
-      background #000000
-      background_opacity 0.8
+      background #2a002a
+      background_opacity 1.0
 
       #: black
       color0 #100010
@@ -48,7 +48,7 @@
 
       #: magenta
       color5  #d800d8
-      color13 #780078
+      color13 #ab00ab
 
       #: cyan
       color6  #00eeee
