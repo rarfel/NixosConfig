@@ -6,8 +6,10 @@
 		enableCompletion = true;
 
 		shellAliases = {
+			ls = "eza";
 			la = "ls -a";
 			ll = "ls -l";
+			lh = "ls -lah";
 
 			grep = "grep --color=auto";
 
