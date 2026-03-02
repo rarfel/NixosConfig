@@ -51,6 +51,7 @@
     sl
     heroic
     obsidian
+    wine
     # steam
 
     # libreoffice
