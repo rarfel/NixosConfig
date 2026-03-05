@@ -23,8 +23,8 @@
 
       # color scheme
       foreground #c98ec9
-      background #240024
-      background_opacity 1.0
+      background #220022
+      background_opacity 0.85
 
       #: black
       color0 #100010

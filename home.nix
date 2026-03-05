@@ -52,6 +52,7 @@
     heroic
     obsidian
     wine
+    asciiquarium-transparent
     # steam
 
     # libreoffice
@@ -94,6 +95,7 @@
     lua54Packages.luarocks
     lua51Packages.lua
     tree-sitter
+    vscode
   ];
 
   home.stateVersion = "25.11";
