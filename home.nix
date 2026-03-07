@@ -96,6 +96,7 @@
     lua51Packages.lua
     tree-sitter
     vscode
+    ghidra
   ];
 
   home.stateVersion = "25.11";
