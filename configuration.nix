@@ -90,7 +90,7 @@
 	# Enable swapfiles
 	swapDevices = [{
 		device = "/swapfile";
-		size = 16 * 1024; # 16GB
+		size = 8 * 1024; # 8GB
 	}];
 	
 	# Enable CUPS to print documents. I dont have a printer
@@ -133,8 +133,8 @@
 		starship
 		bat
 		fastfetch
-		inputs.quickshell.packages.${system}.default
-		inputs.noctalia.packages.${system}.default
+		inputs.quickshell.packages.${stdenv.hostPlatform.system}.default
+		inputs.noctalia.packages.${stdenv.hostPlatform.system}.default
 	];
 
 	system.stateVersion = "25.11"; # Did you read the comment?

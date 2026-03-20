@@ -41,7 +41,7 @@
     cowsay
     # file
     which
-    tree
+    # tree
     # gnused
     # gnutar
     # gawk
@@ -87,6 +87,7 @@
 
     # Code
     cmake
+    remake
     gcc_multi
     gdb
     python315
