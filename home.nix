@@ -53,6 +53,12 @@
     obsidian
     wine
     asciiquarium-transparent
+    pkg-config
+    libX11 
+    libXrandr
+    libXinerama
+    libXcursor
+    libXi
     # steam
 
     # libreoffice
@@ -87,7 +93,7 @@
 
     # Code
     cmake
-    remake
+    gnumake
     gcc_multi
     gdb
     python315

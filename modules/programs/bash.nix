@@ -15,6 +15,8 @@
 
 			ghidra = "_JAVA_AWT_WM_NONREPARENTING=1 ghidra";
 
+			g23 = "g++ -std=c++23";
+
 			# Crazy workaround to run non-nixos files: alien ./myfile
 			alien = "nix run \"github:thiagokokada/nix-alien#nix-alien\" -- ";
 
