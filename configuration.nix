@@ -4,7 +4,6 @@
 	imports =
 	[ # Include the results of the hardware scan.
 		/etc/nixos/hardware-configuration.nix
-		#./modules/programs/steam.nix
 	];
 
 	# Bootloader.
@@ -70,6 +69,9 @@
 	# Enable bluetooth
 	hardware.bluetooth.enable = true;
 
+	# Enable OpenGL
+	hardware.graphics.enable = true;
+
 	# Automatic updating
 	system.autoUpgrade = {
 		enable = true;
@@ -133,9 +135,14 @@
 		starship
 		bat
 		fastfetch
+		mesa-demos
 		inputs.quickshell.packages.${stdenv.hostPlatform.system}.default
 		inputs.noctalia.packages.${stdenv.hostPlatform.system}.default
 	];
+
+	environment.etc.inputrc.text = ''
+		set completion-ignore-case on
+	'';
 
 	system.stateVersion = "25.11"; # Did you read the comment?
 }

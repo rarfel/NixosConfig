@@ -54,11 +54,7 @@
     wine
     asciiquarium-transparent
     pkg-config
-    libX11 
-    libXrandr
-    libXinerama
-    libXcursor
-    libXi
+    fireplace
     # steam
 
     # libreoffice
@@ -103,7 +99,9 @@
     lua51Packages.lua
     tree-sitter
     vscode
+    glfw
     ghidra
+    godot
   ];
 
   home.stateVersion = "25.11";
