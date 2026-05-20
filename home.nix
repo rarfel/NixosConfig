@@ -10,7 +10,6 @@
 
   home.packages = with pkgs; [
 
-    nnn # terminal file manager
     pcmanfm # gui file manager
     lxmenu-data # show installed apps
     shared-mime-info # reconize different file types
@@ -101,7 +100,7 @@
     vscode
     glfw
     ghidra
-    godot
+    jetbrains.idea
   ];
 
   home.stateVersion = "25.11";

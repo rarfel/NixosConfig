@@ -63,6 +63,12 @@
 		variant = "thinkpad";
 	};
 
+	# enable mysql
+	services.mysql = {
+		enable = true;
+		package = pkgs.mariadb;
+	};
+
 	# Configure console keymap
 	console.keyMap = "br-abnt2";
 
@@ -116,9 +122,13 @@
 		isNormalUser = true;
 		description = "rarfel";
 		extraGroups = [ "networkmanager" "wheel" ];
-		packages = with pkgs; [
-			#  thunderbird
-		];
+	};
+
+	# Define database user;
+	users.users.dbuser = {
+		isNormalUser = true;
+		description = "dbuser";
+		extraGroups = [ "networkmanager" "wheel" ];
 	};
 
 	# Install firefox.
@@ -136,6 +146,7 @@
 		bat
 		fastfetch
 		mesa-demos
+		maven
 		inputs.quickshell.packages.${stdenv.hostPlatform.system}.default
 		inputs.noctalia.packages.${stdenv.hostPlatform.system}.default
 	];
