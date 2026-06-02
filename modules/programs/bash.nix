@@ -17,6 +17,9 @@
 
 			g23 = "g++ -std=c++23";
 
+			# init shell to work with rust
+			inirust = "nix shell github:oxalica/rust-overlay";
+
 			# Crazy workaround to run non-nixos files: alien ./myfile
 			alien = "nix run \"github:thiagokokada/nix-alien#nix-alien\" -- ";
 
