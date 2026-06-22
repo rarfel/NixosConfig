@@ -46,7 +46,7 @@
 			enable = true;
 			wayland = true;
 		};
-		desktopManager.gnome.enable = true;
+		# desktopManager.gnome.enable = true;
 	};
 
 	# Enable pam security and polkit
