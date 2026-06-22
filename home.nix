@@ -54,7 +54,7 @@
     asciiquarium-transparent
     pkg-config
     fireplace
-    steam
+    # steam
 
     # libreoffice
     libreoffice-qt
