@@ -40,6 +40,15 @@
 	# Enable the X11 windowing system.
 	services.xserver.enable = true;
 
+	# use both wayland and x11
+	services = {
+		displayManager.gdm = {
+			enable = true;
+			wayland = true;
+		};
+		desktopManager.gnome.enable = true;
+	};
+
 	# Enable pam security and polkit
 	security = {
 		pam.services.swaylock = {
@@ -130,6 +139,13 @@
 		description = "dbuser";
 		extraGroups = [ "networkmanager" "wheel" ];
 	};
+
+  # Enable compatibility layer to work with mason
+  programs.nix-ld.enable = true;
+  programs.nix-ld.libraries = with pkgs; [
+    stdenv.cc.cc
+    zlib
+  ];
 
 	# Install firefox.
 	programs.firefox.enable = true;

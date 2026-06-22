@@ -54,7 +54,7 @@
     asciiquarium-transparent
     pkg-config
     fireplace
-    # steam
+    steam
 
     # libreoffice
     libreoffice-qt
@@ -93,14 +93,14 @@
     gdb
     python315
     javaPackages.compiler.temurin-bin.jre-25
-    lua-language-server
-    lua54Packages.luarocks
-    lua51Packages.lua
-    tree-sitter
+    #lua-language-server
+    #lua54Packages.luarocks
+    #lua51Packages.lua
+    #tree-sitter
     vscode
-    glfw
+    #glfw
     ghidra
-    jetbrains.idea
+    #jetbrains.idea
   ];
 
   home.stateVersion = "25.11";
