@@ -42,10 +42,8 @@
 
 	# use both wayland and x11
 	services = {
-		displayManager.gdm = {
-			enable = true;
-			wayland = true;
-		};
+    displayManager.plasma-login-manager.enable = true;
+    desktopManager.plasma6.enable = true;
 		# desktopManager.gnome.enable = true;
 	};
 
@@ -170,6 +168,17 @@
 	environment.etc.inputrc.text = ''
 		set completion-ignore-case on
 	'';
+
+  # removing some kde default apps
+  environment.plasma6.excludePackages = with pkgs.kdePackages; [
+    plasma-browser-integration
+    konsole
+    elisa
+    qrca
+    kate
+    okular
+    spectacle
+  ];
 
 	system.stateVersion = "25.11"; # Did you read the comment?
 }
