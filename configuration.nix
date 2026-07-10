@@ -4,6 +4,8 @@
 	imports =
 	[ # Include the results of the hardware scan.
 		/etc/nixos/hardware-configuration.nix
+    ./modules/programs/steam.nix
+    ./modules/programs/sddm.nix
 	];
 
 	# Bootloader.
@@ -161,6 +163,7 @@
 		fastfetch
 		mesa-demos
 		maven
+    sddm-astronaut
 		inputs.quickshell.packages.${stdenv.hostPlatform.system}.default
 		inputs.noctalia.packages.${stdenv.hostPlatform.system}.default
 	];

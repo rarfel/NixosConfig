@@ -18,6 +18,7 @@
     # zip
     # xz
     unzip
+    rar
     # p7zip
 
     # utils
@@ -54,6 +55,7 @@
     asciiquarium-transparent
     pkg-config
     fireplace
+    appimage-run
     # steam
 
     # libreoffice

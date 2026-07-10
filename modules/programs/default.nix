@@ -16,7 +16,7 @@
 	};
 
 	programs = {
-		obsidian.enable = true;
+    		obsidian.enable = true;
 		starship.enable = true;
 		fzf.enable = true;
 		eza.enable = true;
