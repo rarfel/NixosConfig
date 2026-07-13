@@ -7,7 +7,8 @@
 		dedicatedServer.openFirewall = true;
 		localNetworkGameTransfers.openFirewall = true;
 	};
-
+  
+  # Enable global appimage support
   programs.appimage = {
       enable = true;
       binfmt = true;

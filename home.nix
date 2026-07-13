@@ -38,7 +38,7 @@
     # ipcalc  # it is a calculator for the IPv4/v6 addresses
 
     # misc
-    cowsay
+    # cowsay
     # file
     which
     # tree
@@ -47,14 +47,14 @@
     # gawk
     # zstd
     # gnupg
-    cava
+    # cava
     sl
     heroic
     obsidian
     wine
-    asciiquarium-transparent
+    # asciiquarium-transparent
     pkg-config
-    fireplace
+    # fireplace
     appimage-run
     # steam
 
@@ -89,12 +89,12 @@
     # usbutils # lsusb
 
     # Code
-    cmake
-    gnumake
-    gcc_multi
-    gdb
-    python315
-    javaPackages.compiler.temurin-bin.jre-25
+    #cmake
+    #gnumake
+    #gcc_multi
+    #gdb
+    #python315
+    #javaPackages.compiler.temurin-bin.jre-25
     #lua-language-server
     #lua54Packages.luarocks
     #lua51Packages.lua

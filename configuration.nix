@@ -44,9 +44,8 @@
 
 	# use both wayland and x11
 	services = {
-    # displayManager.plasma-login-manager.enable = true;
+    # displayManager.plasma-login-manager.enable = true; # disabling because of custom sddm
     desktopManager.plasma6.enable = true;
-		# desktopManager.gnome.enable = true;
 	};
 
 	# Enable pam security and polkit
@@ -163,11 +162,11 @@
 		fastfetch
 		mesa-demos
 		maven
-    sddm-astronaut
 		inputs.quickshell.packages.${stdenv.hostPlatform.system}.default
 		inputs.noctalia.packages.${stdenv.hostPlatform.system}.default
 	];
 
+  # Disable case sensitive
 	environment.etc.inputrc.text = ''
 		set completion-ignore-case on
 	'';

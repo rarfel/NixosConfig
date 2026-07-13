@@ -7,7 +7,7 @@
 		wayland-protocols
 		wayland-scanner
 		wayland-utils
-		libxkbcommon
+		#libxkbcommon
 		pkg-config
 
 		rofi

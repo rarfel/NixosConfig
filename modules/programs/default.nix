@@ -27,5 +27,4 @@
 		};
 		quickshell.enable = true;
 	};
-
 }
