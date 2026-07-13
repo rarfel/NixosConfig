@@ -40,7 +40,7 @@
 	};
 
 	# Enable the X11 windowing system.
-	services.xserver.enable = true;
+	#services.xserver.enable = true;
 
 	# use both wayland and x11
 	services = {
@@ -66,10 +66,10 @@
 	};
 
 	# Configure keymap in X11.
-	services.xserver.xkb = {
-		layout = "br";
-		variant = "thinkpad";
-	};
+	#services.xserver.xkb = {
+	#	layout = "br";
+	#	variant = "thinkpad";
+	#};
 
 	# enable mysql
 	services.mysql = {
@@ -148,6 +148,9 @@
 
 	# Install firefox.
 	programs.firefox.enable = true;
+
+  # Enable ble.sh
+  programs.bash.blesh.enable = true;
 
 	environment.systemPackages = with pkgs; [
 		neovim

@@ -24,6 +24,7 @@
 			alien = "nix run \"github:thiagokokada/nix-alien#nix-alien\" -- ";
 
 		};
-		initExtra = "fastfetch --kitty-direct /home/rarfel/Images/valknutCheio.png --logo-width 35 --logo-height 15";
+		initExtra = "clear; fastfetch --kitty-direct /home/rarfel/Images/valknutCheio.png --logo-width 35 --logo-height 15";
 	};
+  
 }

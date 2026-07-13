@@ -15,5 +15,5 @@
 	];
 	programs = {
 		niri.enable = true;
-		};
+	};
 }
