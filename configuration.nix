@@ -44,7 +44,7 @@
 
 	# use both wayland and x11
 	services = {
-    displayManager.plasma-login-manager.enable = true;
+    # displayManager.plasma-login-manager.enable = true;
     desktopManager.plasma6.enable = true;
 		# desktopManager.gnome.enable = true;
 	};

@@ -27,7 +27,7 @@
         modules = [
           ./configuration.nix
           ./modules/niri
-          ./noctalia.nix
+          ./modules/programs/noctalia.nix
 
           home-manager.nixosModules.home-manager
           {

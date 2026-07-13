@@ -11,7 +11,7 @@
 		pkg-config
 
 		rofi
-		swaybg
+		#swaybg
 	];
 	programs = {
 		niri.enable = true;

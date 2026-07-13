@@ -1,9 +1,21 @@
 { config, pkgs, ... }:
 
 let
-  custom-sddm-astronaut = pkgs.sddm-astronaut.override {
+    sddm-astronaut = (pkgs.sddm-astronaut.override {
     embeddedTheme = "purple_leaves";
-  };
+    #themeConfig = {
+        #HeaderTextColor = "#710bde";
+        #HeaderTextColor = "#ff0000";
+        #Background = "/home/rarfel/Images/ToYourEternity/fushiChair.png";
+    #};
+  }).overrideAttrs
+    (oldAttrs: {
+      #installPhase = oldAttrs.installPhase + ''
+      #  chmod u+w $out/share/sddm/themes/sddm-astronaut-theme/Backgrounds/
+      #  cp ${/home/rarfel/Images/ToYourEternity/fushiChair.png} \
+      #  $out/share/sddm/themes/sddm-astronaut-theme/Backgrounds/fushiChair.png
+      #'';
+  });
 
 in {
   services.displayManager.sddm = {
@@ -23,12 +35,12 @@ in {
       };
     };
     extraPackages = with pkgs; [
-      custom-sddm-astronaut
+      sddm-astronaut
     ];
   };
 
   environment.systemPackages = with pkgs; [
-    custom-sddm-astronaut
+    sddm-astronaut
     kdePackages.qtmultimedia
   ];
 }
