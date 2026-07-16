@@ -83,19 +83,19 @@
               }];
               left = [
               {
+                id = "Clock";
                 formatHorizontal = "dd/MM/yyyy - [HH:mm:ss]";
 		            clockColor = "none";
                 formatVertical = "HH mm - ddd[dd], MMM";
-                id = "Clock";
                 useMonospacedFont = true;
 		            tolltipFormat = "HH:mm ddd[dd], MMM";
                 usePrimaryColor = true;
               }
 	            {
+                id = "SystemMonitor";
 	      	      compactMOde = false;
                 diskPath = "/";
                 iconColor = "none";
-                id = "SystemMonitor";
                 showCpuUsage = true;
                 showDiskUsage = true;
                 showMemoryAsPercentage = true;
@@ -103,8 +103,8 @@
                 useMonospaceFont = true;
               }
               {
-                alwaysShowPercentage = false;
                 id = "Battery";
+                alwaysShowPercentage = false;
                 displayMode = "alwaysShow";
 		            hideIfIdle = false;
 		            showPowerProfile = true;
@@ -125,11 +125,15 @@
           wallpaper = {
             enabled = true;
             directory = "/home/rarfel/Images/ToYourEternity/";
-            automation = {
-              enable = true;
-              interval_seconds = 1800;
-              order = "random";
-            };
+            automationEnabled = true;
+            transitionType = [
+              "pixelate"
+              "honeycomb"
+            ];
+            randomIntervalSec = 1800;
+            transitionDuration = 1500;
+            wallpaperChangeMode = "random";
+            skipStartupTransition = true;
           };
         }; # end of settings
       # path to json file if someday i know what im really doing
