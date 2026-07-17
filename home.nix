@@ -56,6 +56,7 @@
     pkg-config
     # fireplace
     appimage-run
+    aseprite
     # steam
 
     # libreoffice
