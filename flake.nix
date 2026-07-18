@@ -27,12 +27,12 @@
         modules = [
           ./configuration.nix
           ./modules/niri
-          ./modules/programs/noctalia.nix
 
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
+            home-manager.backupFileExtension = "bkp";
 
             home-manager.users.rarfel = import ./home.nix;
           }
