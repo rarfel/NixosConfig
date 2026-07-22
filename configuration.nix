@@ -149,9 +149,6 @@
 	# Install firefox.
 	programs.firefox.enable = true;
 
-  # Enable ble.sh
-  programs.bash.blesh.enable = true;
-
 	environment.systemPackages = with pkgs; [
 		neovim
 		git
