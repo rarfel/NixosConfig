@@ -9,7 +9,7 @@
     # configure options
     programs.noctalia-shell = {
       enable = true;
-      settings = {};
+      #settings = {};
       # importing json config
       inherit (builtins.fromJSON
           (builtins.readFile ./noctalia.json));
