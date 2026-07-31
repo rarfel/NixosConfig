@@ -6,6 +6,7 @@
 		/etc/nixos/hardware-configuration.nix
     ./modules/programs/steam.nix
     ./modules/programs/sddm.nix
+    ./modules/programs/fonts.nix
 	];
 
 	# Bootloader.

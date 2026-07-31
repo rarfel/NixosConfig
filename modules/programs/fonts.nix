@@ -1,9 +1,7 @@
-{config, pkgs, ...}
+{config, pkgs, ...}:
 {
   fonts.packages = with pkgs; [
-    fira-code
-    fira-code-symbols
-    nerdfonts
-    jetbrains-mono
+    nerd-fonts.fira-code
+    nerd-fonts.jetbrains-mono
   ];
 }

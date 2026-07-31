@@ -4,7 +4,6 @@
 		./bash.nix
 		./kitty.nix
 		./rofi.nix
-    ./fonts.nix
 	];
 	
 	programs.git = {
