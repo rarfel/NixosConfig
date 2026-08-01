@@ -163,9 +163,14 @@
 		fastfetch
 		mesa-demos
 		maven
+    distrobox
+    docker
 		inputs.quickshell.packages.${stdenv.hostPlatform.system}.default
 		inputs.noctalia.packages.${stdenv.hostPlatform.system}.default
 	];
+
+  # Enable docker
+  virtualisation.docker.enable = true;
 
   # Disable case sensitive
 	environment.etc.inputrc.text = ''
