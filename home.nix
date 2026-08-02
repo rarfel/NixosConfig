@@ -102,7 +102,7 @@
     #tree-sitter
     vscode
     #glfw
-    ghidra
+    #ghidra
     #jetbrains.idea
   ];
 

@@ -13,7 +13,7 @@
 
 			grep = "grep --color=auto";
 
-			ghidra = "_JAVA_AWT_WM_NONREPARENTING=1 ghidra";
+			#ghidra = "_JAVA_AWT_WM_NONREPARENTING=1 ghidra";
 
 			g23 = "g++ -std=c++23";
 
