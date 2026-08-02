@@ -20,12 +20,6 @@
 		fzf.enable = true;
 		eza.enable = true;
 		cava.enable = true;
-		neovim = {
-			enable = true;
-			defaultEditor = true;
-      withRuby = true;
-      withPython3 = true;
-		};
 		quickshell.enable = true;
 	};
 }
