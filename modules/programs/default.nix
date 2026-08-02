@@ -2,7 +2,7 @@
 {
 	imports = [
 		./bash.nix
-		./kitty.nix
+		./kitty
 		./rofi.nix
 	];
 	
