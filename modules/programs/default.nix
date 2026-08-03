@@ -4,7 +4,7 @@
 		./bash.nix
 		./kitty
 		./nvim
-		./rofi.nix
+		./rofi
 	];
 	
 	programs.git = {
