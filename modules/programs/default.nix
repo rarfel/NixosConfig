@@ -3,6 +3,7 @@
 	imports = [
 		./bash.nix
 		./kitty
+		./nvim
 		./rofi.nix
 	];
 	
