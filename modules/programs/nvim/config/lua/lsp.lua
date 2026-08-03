@@ -4,9 +4,9 @@ vim.diagnostic.config({
 	signs = {
 		text = {
 			[severity.ERROR] = " ",
-			[severity.WARN] = " ",
-			[severity.HINT] = " ",
-			[severity.INFO] = " ",
+			[severity.WARN] = " ",
+			[severity.HINT] = " ",
+			[severity.INFO] = " ",
 		},
 	},
 })

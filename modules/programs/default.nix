@@ -5,6 +5,7 @@
 		./kitty
 		./nvim
 		./rofi
+    ./starship
 	];
 	
 	programs.git = {
@@ -17,7 +18,6 @@
 
 	programs = {
     obsidian.enable = true;
-		starship.enable = true;
 		fzf.enable = true;
 		eza.enable = true;
 		cava.enable = true;
