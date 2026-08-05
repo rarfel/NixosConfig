@@ -41,6 +41,7 @@
     obsidian
     wine
     # asciiquarium-transparent
+    pipes
     pkg-config
     # fireplace
     appimage-run
