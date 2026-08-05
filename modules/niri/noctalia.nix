@@ -12,7 +12,7 @@
       #settings = {};
       # importing json config
       inherit (builtins.fromJSON
-          (builtins.readFile ./noctalia.json));
+          (builtins.readFile ./settings.json));
     };
   };
 }
