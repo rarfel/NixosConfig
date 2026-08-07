@@ -7,6 +7,7 @@
 		./rofi
     ./starship
     ./noctalia
+    ./fastfetch
 	];
 	
 	programs.git = {
