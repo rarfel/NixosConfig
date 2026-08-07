@@ -6,6 +6,7 @@
 		./nvim
 		./rofi
     ./starship
+    ./noctalia
 	];
 	
 	programs.git = {

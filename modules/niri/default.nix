@@ -1,8 +1,5 @@
 {config, pkgs, ...}:
 {
-  imports =[
-    ./noctalia.nix
-  ];
 	environment.systemPackages = with pkgs; [
 		niri
 		xwayland-satellite
