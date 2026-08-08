@@ -45,8 +45,9 @@
 
 	# use both wayland and x11
 	services = {
-    # displayManager.plasma-login-manager.enable = true; # disabling because of custom sddm
     desktopManager.plasma6.enable = true;
+    # selecting niri as default display manager to avoid conflict
+    displayManager.defaultSession = pkgs.lib.mkForce "niri";
 	};
 
 	# Enable pam security and polkit
@@ -146,6 +147,12 @@
     stdenv.cc.cc
     zlib
   ];
+
+  # Enable global appimage support
+  programs.appimage = {
+    enable = true;
+    binfmt = true;
+  };
 
 	# Install firefox.
 	programs.firefox.enable = true;
