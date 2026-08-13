@@ -7,6 +7,7 @@
     ./modules/programs/steam.nix
     ./modules/programs/sddm.nix
     ./modules/programs/fonts.nix
+    ./modules/programs/nix-alien.nix
 	];
 
 	# Bootloader.
