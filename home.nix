@@ -32,38 +32,34 @@
     # iotop # io monitoring
     iftop # network monitoring
 
+    # draw
+    aseprite
+    drawy
+
+    # write
+    obsidian
+    vscode
+    # libreoffice
+    libreoffice-qt
+    hunspell
+
     # misc
     # cowsay
     which
     # cava
     sl
     heroic
-    obsidian
     wine
     # asciiquarium-transparent
     pipes
     pkg-config
     # fireplace
     appimage-run
-    aseprite
     # steam
-
-    # libreoffice
-    libreoffice-qt
-    hunspell
-
+   
     # nix related
     # it provides the command `nom` works just like `nix`
     # with more details log output
     nix-output-monitor
-    
-    # Code
-    #cmake
-    #gnumake
-    #gcc_multi
-    #gdb
-    #python315
-    vscode
-    #ghidra
   ];
 }
