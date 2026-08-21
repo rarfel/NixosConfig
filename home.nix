@@ -55,7 +55,7 @@
     pkg-config
     # fireplace
     appimage-run
-    # steam
+    steam
    
     # nix related
     # it provides the command `nom` works just like `nix`
