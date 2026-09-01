@@ -33,12 +33,11 @@
     iftop # network monitoring
 
     # draw
-    aseprite
+    # aseprite
     drawy
 
     # write
     obsidian
-    vscode
     # libreoffice
     libreoffice-qt
     hunspell
@@ -49,7 +48,7 @@
     # cava
     sl
     heroic
-    wine
+    # wine
     # asciiquarium-transparent
     pipes
     pkg-config
