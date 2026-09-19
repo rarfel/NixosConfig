@@ -6,7 +6,7 @@ return {
 				"lua_ls",
 				"rust_analyzer",
         "clangd",
-			},
+        },
 		},
 		dependencies = {
 			{
@@ -22,6 +22,11 @@ return {
 				},
 			},
 			"neovim/nvim-lspconfig",
+      vim.lsp.config('clangd',{
+        init_options = {
+          fallbackFlags = {'--std=c++20'} --Making clangd to reconize c++20 features
+        },
+      })
 		},
 	},
 }
