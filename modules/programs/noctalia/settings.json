@@ -153,7 +153,7 @@
     "screenOverrides": []
   },
   "general": {
-    "avatarImage": "/home/rarfel/Images/funnySkeleton.png",
+    "avatarImage": "/home/rarfel/Pictures/Skeletons/funnySkeleton.jpg",
     "dimmerOpacity": 0.2,
     "showScreenCorners": false,
     "forceBlackScreenCorners": false,
@@ -265,7 +265,7 @@
   "wallpaper": {
     "enabled": true,
     "overviewEnabled": false,
-    "directory": "/home/rarfel/Images/ToYourEternity/",
+    "directory": "/home/rarfel/Pictures/Wallpapers",
     "monitorDirectories": [],
     "enableMultiMonitorDirectories": false,
     "showHiddenFiles": false,

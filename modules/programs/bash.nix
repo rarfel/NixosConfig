@@ -21,7 +21,7 @@
 			inirust = "nix shell github:oxalica/rust-overlay";
 
 		};
-		initExtra = "clear; fastfetch --kitty-direct /home/rarfel/Images/valknutCheio.png --logo-width 35 --logo-height 15";
+		initExtra = "clear; fastfetch --kitty-direct /home/rarfel/Pictures/valknutCheio.png --logo-width 35 --logo-height 15 ";
 	};
   
 }
