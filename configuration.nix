@@ -4,7 +4,7 @@
 	imports =
 	[ # Include the results of the hardware scan.
 		/etc/nixos/hardware-configuration.nix
-    ./modules/programs/steam.nix
+    #./modules/programs/steam.nix
     ./modules/programs/sddm.nix
     ./modules/programs/fonts.nix
     ./modules/programs/nix-alien.nix
