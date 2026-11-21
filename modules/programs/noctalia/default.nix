@@ -1,5 +1,5 @@
 { pkgs, inputs, ... }:
 {
-    # importing json config
-    xdg.configFile."noctalia/settings.json".source = ./settings.json;
+    # importing toml config
+    xdg.configFile."noctalia/noctalia-config.toml".source = ./noctalia-config.toml;
 }
